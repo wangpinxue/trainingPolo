@@ -1,0 +1,309 @@
+.logo{
+    width: 287px;
+    height: 76px;
+    background: url("../img/polo360.png") no-repeat;
+    float: left;
+    margin-left: 15px;
+}
+body{
+    background: url("../img/bg.png") repeat-x;
+}
+.header{
+    padding-top: 37px;
+    height: 122px;
+}
+/*统一设置宽度*/
+.w{
+    width: 940px;
+    margin: 0 auto;
+}
+/* 导航栏右侧 */
+.nav{
+    float: right;
+    margin-top: 22px;
+}
+.nav ul{
+    float: left;
+}
+.nav li{
+     border-left: 1px #d6d6d6 dotted;
+     padding: 0 6px 10px;
+}
+.nav a:hover{
+   color:#b2b2b2;
+}
+.nav p{
+    font:11px Tahoma;
+    color: #b7b7b7;
+}
+.nav a{
+    text-decoration: none;
+    color: #666666;
+    font: bold 14px Georgia;
+}
+/* 中间部分导航圆圈 */
+/*设置父元素为相对定位*/
+.banner{
+    position: relative;
+    height: 356px;
+    /*设置banner的阴影*/
+    background: url("../img/banner-bg.png") no-repeat bottom;
+}
+.pointerDiv{
+    position: absolute;
+    top: 314px;
+    left: 15px;
+}
+.pointerDiv a{
+    float: left;
+    margin-left: 4px;
+    width: 17px;
+    height: 17px;
+    background: url("../img/pointer.png");
+}
+.pointerDiv a:hover, .pointerDiv .active{
+    float: left;
+    width: 17px;
+    height: 17px;
+    background: url("../img/pointer-active.png");
+}
+/*内容区的格式*/
+.content{
+    padding-bottom: 35px;
+    background: url("../img/line.png") no-repeat bottom;
+}
+
+/*字体*/
+.content h1{
+    font: bold 24px Georgia;
+    text-align: center;
+    padding: 16px 0px 20px 0px;
+    background:url("../img/line.png") no-repeat bottom;
+}
+.content h2{
+    color: #11719e;
+    font:21px Georgia;
+}
+.content h3{
+    color: #8c8c8c;
+    font:12px Times New Roman;
+}
+/*将三块内容区设置浮动*/
+.content .cs,.contact .ct{
+    margin: 0px 18px;
+}
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .ct,.contact .nu{
+    margin-top: 38px;
+    float: left;
+    display: block;
+    width: 299px;
+    padding-left: 2px;
+}
+/*一大段文字格式设置*/
+.content .details{
+    color: #3e3e3e;
+    font:13px Times New Roman;
+    margin-left: 5px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    height: 85px;
+}
+/*按钮设置*/
+.content .btn a{
+    margin:20px 0px 0px 5px;
+    color:#016999;
+    font:12px/40px Times New Roman;
+    /*首行缩进*/
+    text-indent: 1em;
+    display: block;
+    text-decoration: none;
+    background: url("../img/btn.png") no-repeat;
+    height: 40px;
+}
+/*解决高度塌陷问题*/
+.clearFix:before, .clearFix:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+/*IE6下解决高度塌陷问题*/
+.clearFix{
+    zoom:1;
+}
+/*设置图片背景*/
+.content .imgDiv{
+    margin-top: 18px;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+    background: url("../img/img-bg.png") no-repeat;
+    width: 299px;
+    height: 202px;
+}
+/*设置联系栏字体*/
+.contact h1{
+    font: 18px/1 Georgia;
+    color: #444444;
+    /*设置联系栏标题位置*/
+    padding-bottom: 8px;
+    border-bottom: 1px #d3d3d3 dashed;
+    margin-bottom: 16px;
+}
+/*设置联系栏的输入框的格式*/
+.contact .txt,.contact .txt2{
+    margin: 0px 0px 16px 0px;
+    padding: 0px 10px;
+    width: 276px;
+    height:33px;
+    border:none;
+    background: url("../img/input.png") no-repeat;
+}
+/*设置联系栏的输入域的格式*/
+.contact .tArea{
+    margin: 0px;
+    padding: 10px;
+    width: 276px;
+    height:114px;
+    /*单独为IE6设置一个背景不随元素滚动*/
+    _background-attachment: fixed;
+    /*
+     * 去除默认边框
+     */
+    border: none;
+    /*
+     * 去除滚动条
+     */
+    overflow: auto;
+    background: url("../img/textarea.png") no-repeat;
+    /*不能随意改变输入域的大小*/
+    resize: none;
+
+}
+/*设置联系栏的按钮*/
+/*.contact .btn{
+    margin:11px 0px 0px 3px;
+    padding:0px 0px 0px 1em;
+    !*按钮里面的字体靠左*!
+    text-align: left;
+    width: 163px;
+    height: 32px;
+    background: url("../img/btn2.png") no-repeat;
+    font:13px/1 Georgia;
+    color: white;
+    border: none;
+}*/
+.contact .btn{
+    width: 163px;
+    height: 32px;
+    background: url(../img/sprite.png) no-repeat 0px -27px;
+    border: none;
+
+    /*
+     * 去除默认内外边距
+     */
+    padding: 0;
+    margin: 11px 0px 23px;
+
+    /*设置字体*/
+    color: white;
+    font: 13px Georgia;
+    /*设置文字的位置*/
+    text-align: left;
+    text-indent: 1em;
+    /*
+     * cursor可以用来设置鼠标指针的样式
+     */
+    cursor:pointer ;
+
+}
+/*联系栏左侧*/
+/*左侧第一个段落字体设置*/
+.contact .p1{
+    font:  12px/1 Times New Roman;
+    color: #444444;
+    margin-bottom: 7px;
+}
+/*左侧浮动图标*/
+.contact .icon{
+    display: block;
+    height: 54px;
+    width: 54px;
+    float: left;
+    /*去除空格*/
+    font-size: 0px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+/*第二段落标题*/
+.contact h2{
+    /*background-color: #fba;*/
+    font: bold 18px/1 Gill Sans MT;
+    color: #444444;
+    /*设置联系栏标题位置*/
+    padding: 95px 0px 8px;
+    border-bottom: 1px #d3d3d3 dashed;
+    margin-bottom: 15px;
+}
+/*左边的输入框*/
+.contact .txt2{
+    margin:0;
+}
+/*右边图片格式设置*/
+.nu img{
+    float: left;
+    width: 58px;
+    height: 58px;
+    margin-right: 8px;;
+}
+.nu .picDiv,.nu .picDiv2{
+    padding-bottom: 9px;
+    border-bottom: dashed #d3d3d3 1px;
+}
+.nu .p3{
+    font: 12px/1 "Times New Roman";
+    color: #444444;
+}
+/*调整右边后面两个图片位置*/
+.nu .picDiv2{
+    margin-top: 14px;
+}
+/*设置底部*/
+.footer{
+    height: 173px;
+    background: #333;
+    /*设置上边框*/
+    border-top: 10px solid #4c4c4c;
+}
+
+/*
+ * 设置底部的文字的样式
+ */
+.footer a , .footer p{
+    color: #999;
+    font: 11px Helvetica ;
+    text-decoration: none;
+}
+
+/*
+ * 设置a元素的hover
+ */
+.footer a:hover{
+    color: #cccaca;
+    text-decoration: underline;
+}
+
+.footer p{
+    margin-left: 8px;
+    margin-right: 23px;
+    margin-bottom: 6px;
+}
+
+.footer .w{
+    padding-top:18px ;
+}
+
+.footer .copy{
+    float: right;
+    /*处理双倍边距的bug*/
+    display: inline;
+}
