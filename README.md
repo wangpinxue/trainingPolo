@@ -1,2 +1,0 @@
-# trainingPolo
-a training index
